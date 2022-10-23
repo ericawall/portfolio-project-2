@@ -355,3 +355,26 @@ const colors = [
 playerReset();
 updateScore();
 update(); // Run the update to continue to draw new pieces into play
+
+/**
+* Display screen when the game is over.
+*/
+
+// Open the game over screen. Display button with EventListener for user to try again.
+function gameOver() {
+    gameScreen.style.display = "none";
+    wrongScreen.style.display = "block";
+
+    document.getElementById("try-again").addEventListener("click", resetGame);
+    }
+
+// To restart the game.
+function resetGame() {
+    gameScreen.style.display = "block";
+    wrongScreen.style.display = "none";
+    arena.forEach(row => row.fill(0));
+    player.score = 0;
+    player.level = 0;
+    dropInterval = 1000;
+    updateScore();
+}
