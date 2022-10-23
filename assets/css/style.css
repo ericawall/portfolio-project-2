@@ -259,4 +259,77 @@ a:hover {
     padding: 1rem 0;
 }
 
+/* Media query adjustments for different screen sizes */
 
+@media all and (max-width: 768px) {
+    #user-log {
+        width: 50%;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .image-result img {
+        width: 25%;
+    }
+
+    .image-other-screens img {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 390px) {
+    /* Style main page */
+    /* Adjust game container size for mobile screen */
+    #game-container {
+        top: 42%;
+        height: 80%;
+        width: 90%;
+    }
+
+    #user-log {
+        width: 50%;
+    }
+
+    footer {
+        top: 90%;
+        padding-top: 0;
+        text-align: center;
+        width: 60%;
+    }
+
+    footer p {
+        padding-top: 15%;
+    }
+
+    .float-end {
+        float: none !important;
+        clear: left;
+    }  
+
+    /* Style game screen */
+    .top-line {
+        font-size: 80%;
+    }
+
+    #next-phrase, #try-again, #restart-game {
+        width: 70%;
+    }
+
+    #next-prase, #restart game {
+        margin-bottom: 0.5rem;
+    }
+
+    .image-result img {
+        width: 40%;
+    }
+
+    .image-other-screens img {
+        width: 65%;
+    }
+}
