@@ -1,0 +1,262 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+/* Colors pallet */
+:root {
+    --red: #FF0000;
+    --navy-blue: #1B212B;
+    --sky: #7bb4e0;
+    --light-blue: #b0d3e8;
+    --light-orange: #FCCD4D;
+    --orange: #F8B500;
+    --gray:#445361;
+}
+
+/* Remove default values */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: #445361;
+    font-weight: 400;
+}
+
+/* Set up transparency of background image */
+body::before {
+    position: fixed;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/tetris.png);
+    background-color: var(--sky);
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: .9;
+    z-index: -1;
+}
+
+/* Style of main game container */
+#game-container {
+    position: absolute;
+    text-align: center;
+    color: var(--navy-blue);
+    width: 80%;
+    height: 30rem;
+    max-height: 30rem;
+    max-width: 50rem;
+    box-sizing: border-box;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    padding: 1%;
+}
+
+/* Style top line of the game container, icons and text inside it */
+.top-line {
+    line-height: 2.5rem;
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
+
+.user-icon {
+    font-size: 250%; 
+    float: left;
+}
+
+/* username display */
+.top-line p {
+    float: left;
+}
+
+/* Style instructions icon and remove default background color */
+#instructions-icon {
+    background: none !important;
+    font-size: 250%;
+    float: right;
+}
+
+#login-screen {
+    text-transform: uppercase;
+}
+
+/* Color gradient to Tetris game title */
+#game-title {
+    background: #FCEABB;
+    background: -webkit-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
+    background: -moz-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
+    background: repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+input, label {
+    font-size: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+}
+
+input {
+    box-shadow: 1px 1px 10px var(--light-blue);
+    border: 1px solid var(--light-blue);
+    padding: 0.7rem;
+    font-weight: bold;
+    width: 35%;
+}
+
+/* Override default dark outline color */
+input:focus {
+    outline: none !important;
+    border-color: var(--sky);
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+.button {
+    background: linear-gradient(to right, var(--light-orange), var(--orange)) !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 35%;
+    border-radius: 0.7rem;
+    box-shadow: 0 10px 20px -8px rgba(57,95,122,.7);
+}
+
+.button:hover {
+    background: linear-gradient(to right, var(--orange), var(--light-orange)) !important;
+}
+
+/* Style for message when no user input & correct answer when not guessed */
+.user-log-error, #correct-answer {
+    font-size: 90%;
+    color: var(--pink);
+    padding-top: 1.2rem;
+    padding: 1.2rem 0.5rem 0;
+}
+
+/* Modal with game instructions */
+#modal-header {
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 0.5rem;
+    color: #FF0000;
+}
+
+.show-modal {
+    color: var(--pink);
+    width: 100%;
+    height: 40rem;
+    max-height: 30rem;
+    max-width: 50rem;
+    align-items: center;
+    display: block;
+    z-index: 2;
+}
+
+.modal-content {
+    box-shadow: 1px 1px 20px var(--light-blue);
+    padding: 4%;
+    display: block !important;
+    height: 100%;
+}
+
+#username {
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: none;
+    margin-left: 2%;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+#tetris {
+    border: solid 0.2em white;
+    background-color: black;
+  }
+
+#game-screen p {
+    font-weight: 400;
+    display: inline;
+}
+
+#wrong-screen img {
+    width: 30%;
+    height: 30%;
+}
+
+#image-other-screens img {
+    width: 35%;
+    height: 35%;
+}
+
+/* Style of site footer */
+footer {
+    position: fixed;
+    width: 80%;
+    max-width: 50rem;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+footer p {
+    padding-top: 5%;
+    margin-bottom: 0;
+    font-size: 110%;
+    font-weight: bolder;
+    color: var(--navy-blue);
+}
+
+footer a {
+    font-size: 1.6rem;
+    padding-right: 0.5rem;
+    color: var(--navy-blue);
+}
+
+footer a:hover {
+    color: var(--pink);
+}
+
+/* contact form */
+a {
+    text-decoration: none;
+    padding: inherit;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.btn-send-form {
+    line-height: normal;
+}
+
+.image-other-screens img {
+    width: 35%;
+    padding: 1rem 0;
+}
+
+
