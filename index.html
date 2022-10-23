@@ -68,7 +68,7 @@
                    <button class="button" onclick="closeInstructions()">Close</button>
             </div>
         </div>
-        
+
         <!-- Game Screen -->
         <div id="game-screen">
             <div>
@@ -78,8 +78,22 @@
             <!-- section where tetris game is-->        
             <canvas id="tetris" width="240" height="400">
         </div>
+
+        <!-- Screen displayed when user loses the game -->
+        <div id="wrong-screen">
+            <div class="result-text">
+                <h1 id="game-title" class="pb-3">Oh No!</h1>
+                <p>Better luck next time!</p>
+                <img src="assets/images/game-over.jpg" alt="Game Over!">
+            </div>
+            <br>      
+            <div>
+                <!-- Option to play the game again -->
+                <button class="button" id="try-again">Restart game?</button>
+            </div>
+        </div>
+    </div>
         
-    </div>   
     <footer></footer> 
 
     <!-- Game script -->
