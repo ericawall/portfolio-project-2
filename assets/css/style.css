@@ -86,7 +86,7 @@ body::before {
 }
 
 /* Color gradient to Tetris game title */
-#game-title {
+.game-title, .game-finish {
     background: #FCEABB;
     background: -webkit-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
     background: -moz-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);

@@ -9,9 +9,9 @@
     <meta name="author" content="Erica Wall">
     
     <!-- Bootstrap v5.1.3 link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
         
     <title>Tetris Game</title>
 </head>
@@ -56,14 +56,14 @@
                     move, and drop the falling Tetriminos inside the Matrix (playing field). Lines are cleared when they are completely 
                     filled with Blocks and have no empty spaces.<br>
                     As lines are cleared, the level increases and Tetriminos fall faster, making the game progressively more challenging. 
-                    If the Blocks land above the top of the playing field, the game is over.</p>
+                    If the Blocks land above the top of the playing field, the game is over.
                 </p>
                 <p>To play the game, use the arrow keys as follows:</p>
                 <p>
                    <i class="fas fa-long-arrow-alt-left"></i> Moves the piece 1 space to the left each time it is pressed<br>
                    <i class="fas fa-long-arrow-alt-right"></i> Moves the piece 1 space to the right each time it is pressed<br>
                    <i class="fas fa-long-arrow-alt-up"></i> Rotates the piece anti-clockwise by 90 degrees each time it is pressed<br>
-                   <i class="fas fa-long-arrow-alt-down"></i> Makes the piece move downwards by 1 space each time it is pressed</i>
+                   <i class="fas fa-long-arrow-alt-down"></i> Makes the piece move downwards by 1 space each time it is pressed
                 </p>  
                    <button class="button" onclick="closeInstructions()">Close</button>
             </div>
@@ -76,13 +76,13 @@
                 <span id="level">0</span>
             </div>
             <!-- section where tetris game is-->        
-            <canvas id="tetris" width="240" height="400">
+            <canvas id="tetris" width="240" height="400"></canvas>
         </div>
 
         <!-- Screen displayed when user loses the game -->
         <div id="wrong-screen">
             <div class="result-text">
-                <h1 id="game-title" class="pb-3">Oh No!</h1>
+                <h1 id="game-finish" class="pb-3">Oh No!</h1>
                 <p>Better luck next time!</p>
                 <img src="assets/images/game-over.jpg" alt="Game Over!">
             </div>
