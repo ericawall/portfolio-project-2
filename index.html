@@ -16,6 +16,23 @@
     <title>Tetris Game</title>
 </head>
 <body>
+
+    <!-- White box game container-->
+    <div id="game-container" class="border-2 rounded bg-light">
+        <!-- Top of the game container -->
+        <div class="top-line"></div>
+        <!-- Main screen with game title and user login -->
+        <div class="mt-3" id="login-screen"></div>
+        <!-- Modal with game controls instructions -->
+        <div id="myModal" class="modal border border-2 p-1 p-sm-1"></div>
+        <!-- Game Screen -->
+        <div id="game-screen"></div>
+        <!-- Screen displayed when user loses the game -->
+        <div id="wrong-screen"></div>
+    </div>
+
+    <footer></footer> 
+
     <!-- Game script -->
     <script src="assets/js/game.js"></script>
     <!-- Font Awesome script -->
