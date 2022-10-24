@@ -47,8 +47,10 @@ function formSubmittedMessage() {
             <p>Your form has been submitted.</p><br>
             <div class="image-other-screens">
                 <img src="assets/images/contact-form-thank-you.jpg" alt="tetris-style image with thank you writing">
-            </div><br><br>
-            <a href="index.html" class="button my-3">Return to Tetris Homepage</a>
+            </div><br>
+            <p>Your feedback is important to us</p>
+            <br>
+            <a href="index.html" class="button my-3">Play Tetris</a>
             `;
     document.getElementById("game-container").innerHTML = message;
 }
