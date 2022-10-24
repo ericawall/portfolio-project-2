@@ -43,7 +43,8 @@ const btn = document.getElementById("btn-send-form");
 */ 
 function formSubmittedMessage() {
     let message = `
-            <p>Thank you, your form has been submitted.</p><br>
+            <br>        
+            <p>Your form has been submitted.</p><br>
             <div class="image-other-screens">
                 <img src="assets/images/contact-form-thank-you.jpg" alt="tetris-style image with thank you writing">
             </div><br><br>
