@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
-/* Colors pallet */
+/* Colors pallet for everything except the tetrominos*/
 :root {
     --red: #FF0000;
     --navy-blue: #1B212B;
@@ -11,7 +11,7 @@
     --light-orange: #FCCD4D;
     --orange: #F8B500;
     --gray:#445361;
-}
+    }
 
 /* Remove default values */
 * {
@@ -25,6 +25,12 @@ body {
     font-family: "Noto Sans", sans-serif;
     color: #445361;
     font-weight: 400;
+}
+
+h1 {
+    font-family: "Press Start 2P", cursive;
+    color: red;
+    font-weight: 500;
 }
 
 /* Set up transparency of background image */
@@ -86,7 +92,8 @@ body::before {
 }
 
 /* Color gradient to Tetris game title */
-.game-title, .game-finish {
+
+#game-title, #game-finish, #modal-header {
     background: #FCEABB;
     background: -webkit-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
     background: -moz-repeating-linear-gradient(to right, #FCEABB 24%, #f77260 13%, #fb4a2b 41%, #fe1803 71%);
