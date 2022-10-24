@@ -76,7 +76,7 @@ body::before {
 }
 
 /* username display */
-.top-line p {
+.top-line h4 {
     float: left;
 }
 
