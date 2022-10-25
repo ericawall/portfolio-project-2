@@ -203,6 +203,7 @@ The website has 3 webpages consisting of 9 distinct features described below:
   - Username
   - Picture of game over with a tetris theme
   - Button to restart the game
+- The title of the page also fades-in, like on the home page
 
 <details><summary>See feature</summary>
 <img src="docs/features/feature-game-over.jpg">
@@ -391,13 +392,13 @@ The website was deployed using GitHub Pages by following these steps:
 - Multi-screen mock-up image created at [Techsini](https://techsini.com/multi-mockup/index.php)
 
 ### Code
-- Overall layout of the website, and structure of ReadMe documentation was heavily inspired by [The Sunshine Guessing Game](https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/index.html) by Aleksandra Haniok.
+- Overall layout of the website, and structure of ReadMe documentation was heavily inspired by [The Sunshine Guessing Game](https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/index.html) by Aleksandra Haniok, a majority of her code was used.
 - [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
 - [EmailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form) official tutorial & playground environment within EmailJS. Email Templates were used to create a contact form with email being sent to desired address.
 - Game title with a gradient was created with [CSS Text Gradient Generator](https://www.cssportal.com/css-text-gradient-generator/)
 - Fade-in effect for game title was made using [this source](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
 - Setting the arrow keys for the game controls was make using [this source](https://www.toptal.com/developers/keycode)
-- How to create the tetris game itself was inspired by [Code Explained](https://www.codeexplained.dev/2018/08/create-tetris-game-using-javascript.html), [this Educatative blog page](https://www.educative.io/blog/javascript-tutorial-build-tetris) by Ryan Thelin, [this GitHub page](https://github.com/CatalinStefan/Tetris) by Stefan Catalin,  [This Codepen page](https://codepen.io/skybirdtrill/pen/NNwzqN) by Skybird Trill and [this GitHub page](https://8000-dionyziz-canvastetris-a9qt4sjap3p.ws-eu72.gitpod.io/) by Dionysis Zindros. 
+- How to create the tetris game itself was inspired by [Code Explained](https://www.codeexplained.dev/2018/08/create-tetris-game-using-javascript.html), [this Educatative blog page](https://www.educative.io/blog/javascript-tutorial-build-tetris) by Ryan Thelin, [This Codepen page](https://codepen.io/skybirdtrill/pen/NNwzqN) by Skybird Trill and [this GitHub page](https://8000-dionyziz-canvastetris-a9qt4sjap3p.ws-eu72.gitpod.io/) by Dionysis Zindros. A large section of code was used from [this GitHub page](https://github.com/CatalinStefan/Tetris) by Stefan Catalin,.
 -  [w3schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2) was reviewed to change input focus color
 -  Fixed contact form container going off mobile screen when clicking on input field with use of [this](https://brightwhiz.com/running-javascript-based-on-screen-size/) source.
 

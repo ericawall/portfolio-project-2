@@ -1,5 +1,7 @@
 /**
  * Add an event listener to the document and run the main screen with user log-in
+ * Some script taken and modified from the 'Sunshine Guessing Game' https://aleksandrac-cipp2sunshi-wtkxcr43660.ws-eu72.gitpod.io/ 
+ * by Aleksandra Haniok, and from 'Tetris' https://github.com/CatalinStefan/Tetris by Stefan Catalin.
  */
  document.addEventListener('DOMContentLoaded', function () {
     runMainScreen();
