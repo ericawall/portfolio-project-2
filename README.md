@@ -363,7 +363,7 @@ The website was tested on the following devices:
 | ------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ----------------- |
 | Contact Form | User fills in the contact form and clicks the submit button | Developer receives email with user's contact details and message | Works as expected |
 
-## Bugs/Improvements
+## Bugs
 
 No bugs are remaining, the only issues with this site is the inability to act on the jshint warning phrase before deadline.
 For future improvements, I will add audio with an icon that turns the sound on and off each time it is clicked. I will make the fontawesome icon change when it is clicked, showing one icon for sound on, and a different icon for sound off.
