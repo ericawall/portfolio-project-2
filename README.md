@@ -6,7 +6,7 @@
 
 ![Mockup image](docs/responsiveness-mockup-tetris.jpg)
 
-## Table of Content
+## Table of Contents
   - [Project Goals](#project-goals)
     - [User Goals](#user-goals)
     - [Site Owner Goals](#site-owner-goals)
@@ -235,3 +235,176 @@ The website has 3 webpages consisting of 9 distinct features described below:
 </details>
 
 ## Validation
+
+### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors, However, one warning was identified linked to an aria-label.
+<details><summary>See html validation </summary>
+<img src="docs/validation/validation-html .jpg">
+</details><br>
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+When validating all website, it passes with no errors. 
+
+<details><summary>See css validation</summary>
+<img src="docs/validation/validation-css.jpg">
+</details><br>
+
+### JavaScript Validation
+
+JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found, but there were a number of warnings, with the same threat: ['let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)],  I am not sure how to fix this prior to deadline.
+
+<details><summary>See game.js validation</summary>
+<img src="docs/validation/validation-jshint-game-page.jpg">
+</details>
+<details><summary>see contact-form.js validation</summary>
+<img src="docs/validation/validation-jshint-contact-page.jpg">
+</details><br>
+
+### Accessibility
+
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards.
+All site pass with 0 errors.
+
+<details><summary>See wave validation</summary><img src="docs/validation/validation-wave.jpg">
+</details><br>
+
+### Performance
+
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+<details><summary>see lighthouse validation</summary><img src="docs/validation/validation-lighthouse.jpg">
+</details><br>
+
+
+## Testing
+
+### Performing tests on various devices
+
+The website was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate viewports of different devices.
+
+The website was tested on the following devices:
+- Dell Inspiron 5570 (laptop screen size)
+- Huawei Matepad Pro (tablet screen)
+- Huawei P20 Pro (mobile screen)
+
+### Browser compatibility
+
+- Testing has been carried out on the following browsers:
+  - Googe Chrome Version 96.0.4664.110 (Official Build) (64-bit)
+  - Firefox Browser 95.0.2 (64-bit)
+
+### Testing user requirements
+
+1. I want to easily understand the rules of the game
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Instructions Icon | Click on the icon | Modal with game instructions pops up | Works as expected |
+
+2. I want to enter my name and have it visible on screen while the game is played
+
+| **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
+| -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
+| Username input | Type user name (1-12 characters) and click button or press Enter key | User log in and name displayed in top left corner | Works as expected |
+
+3. I want to be able to play the game by using the keyboard
+
+| **Feature** | **Action**                                                               | **Expected Result**                                                                        | **Actual Result** |
+| ----------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------- |
+| Game screen | Click on the displayed alphabet buttons or press the key on the keyboard | The letter which have already been clicked/pressed changes color and cannot be used again. | Works as expected |
+
+4. I want to be able to play the game on desktop, tablet and mobile devices
+
+| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
+| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
+| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
+
+5. I want to be able to get in touch with the developer
+
+| **Feature**  | **Action**                               | **Expected Result**       | **Actual Result** |
+| ------------ | ---------------------------------------- | ------------------------- | ----------------- |
+| Contact Form | Click on the envelope icon in the footer | Displays the contact form | Works as expected |
+
+6. I want to be sure that my message has been sent
+
+| **Feature**                      | **Action**                                           | **Expected Result**                        | **Actual Result** |
+| -------------------------------- | ---------------------------------------------------- | ------------------------------------------ | ----------------- |
+| Contact Form confirmation screen | Fill in the contact form and click the submit button | The contact form confirmation is displayed | Works as expected |
+
+7. I want user to easily understand the game
+
+| **Feature**       | **Action**                      | **Expected Result**                  | **Actual Result** |
+| ----------------- | ------------------------------- | ------------------------------------ | ----------------- |
+| Instructions Icon | Click on the icon on any screen | Modal with game instructions pops up | Works as expected |
+
+8.  I want the user to be able to challenge themselves
+
+| **Feature**             | **Action**                                                                                                                  | **Expected Result**                             | **Actual Result** |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------- |
+| Game screen | Every time the user's score reaches an increment of 1000 the game speeds up slightly until the next increment is reached, and so on | The game level screen loads of the chosen game. | Works as expected |
+
+9. I want my game to be fully responsive
+
+| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
+| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
+| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
+
+10.  I want the user to come to a 404 error page instead of having to use the browser back button if they enter a url that does not exist
+
+| **Feature**    | **Action**           | **Expected Result**                                                                       | **Actual Result** |
+| -------------- | -------------------- | ----------------------------------------------------------------------------------------- | ----------------- |
+| 404 error page | Page cannot be found | When a user types the wrong address or cannot find a page they are rerouted to a 404 page | Works as expected |
+
+11. I want user to be able to contact me and provide their feedback
+
+| **Feature**  | **Action**                                                  | **Expected Result**                                              | **Actual Result** |
+| ------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ----------------- |
+| Contact Form | User fills in the contact form and clicks the submit button | Developer receives email with user's contact details and message | Works as expected |
+
+## Bugs/Improvements
+
+No bugs are remaining, the only issues with this site is the inability to act on the jshint warning phrase before deadline.
+For future improvements, I will add audio with an icon that turns the sound on and off each time it is clicked. I will make the fontawesome icon change when it is clicked, showing one icon for sound on, and a different icon for sound off.
+
+
+## Deployment
+
+### GitHub Pages
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: main
+4. Once saved, GitHub will refresh and your website will be publishd from GitHub repository
+5. The link to your published website will appear: "Your site is published at https://ericawall.github.io/portfolio-project-2/"
+
+## Credits
+
+### Images
+
+- Site icons in top line of game container and footer were taken from [Fontawesome](https://fontawesome.com/)
+- Background image was found on [storyblocks](https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/cW5lDBG/tetris-game-beautiful-backdrop-with-3d-tetris-blocks_bmdysw8ye_thumbnail-1080_01.png)
+- Image for contact form confirmation was used from [dreamstime](https://thumbs.dreamstime.com/b/illustration-design-tetris-russia-puzzle-thank-you-frame-banner-rich-black-golden-background-tetris-russia-170320373.jpg)
+- Image for the game over screen was taken from [voicemod](https://us-tuna-sounds-images.voicemod.net/1a19ab97-f5c3-4d6e-b1da-72aeb6a21153.jpg)
+- 404 error page image was taken from [dreamstime](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fstock-illustration-error-page-pixel-retro-game-style-set-image95927294&psig=AOvVaw1P6pEoGN8NB69RAnIjEG2_&ust=1666716547538000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLCE5pKp-foCFQAAAAAdAAAAABAE)
+- Multi-screen mock-up image created at [Techsini](https://techsini.com/multi-mockup/index.php)
+
+### Code
+- Overall layout of the website, and structure of ReadMe documentation was heavily inspired by [The Sunshine Guessing Game](https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/index.html) by Aleksandra Haniok.
+- [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
+- [EmailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form) official tutorial & playground environment within EmailJS. Email Templates were used to create a contact form with email being sent to desired address.
+- Game title with a gradient was created with [CSS Text Gradient Generator](https://www.cssportal.com/css-text-gradient-generator/)
+- Fade-in effect for game title was made using [this source](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
+- Setting the arrow keys for the game controls was make using [this source](https://www.toptal.com/developers/keycode)
+- How to create the tetris game itself was inspired by [Code Explained](https://www.codeexplained.dev/2018/08/create-tetris-game-using-javascript.html), [this Educatative blog page](https://www.educative.io/blog/javascript-tutorial-build-tetris) by Ryan Thelin, [this GitHub page](https://github.com/CatalinStefan/Tetris) by Stefan Catalin,  [This Codepen page](https://codepen.io/skybirdtrill/pen/NNwzqN) by Skybird Trill and [this GitHub page](https://8000-dionyziz-canvastetris-a9qt4sjap3p.ws-eu72.gitpod.io/) by Dionysis Zindros. 
+-  [w3schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2) was reviewed to change input focus color
+-  Fixed contact form container going off mobile screen when clicking on input field with use of [this](https://brightwhiz.com/running-javascript-based-on-screen-size/) source.
+
+### Other
+
+- Instructions regarding how to play tetris were inspired by [Free Tetris N-Block](https://www.freetetris.org/game.php)
+
+
+## Acknowledgements
+Many thanks to everyone who supported me in the development of the website
