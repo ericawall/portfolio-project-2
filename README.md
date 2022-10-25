@@ -1,3 +1,7 @@
+<img src="assets/images/tetris-logo.jfif" style="width: 120px;height:50px;">
+
+**Developer: Erica Wall**
+
 [Visit live website](https://ericawall.github.io/portfolio-project-2/)
 
 ![Mockup image](docs/responsiveness-mockup-tetris.jpg)
